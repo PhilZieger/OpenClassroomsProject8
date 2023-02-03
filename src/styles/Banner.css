@@ -1,0 +1,149 @@
+@import url(Root.css);
+
+.portfolio-home-banner {
+    width: 100%;
+    height: 590px;
+    background-color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-home-banner-content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-home-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.portfolio-home-banner-text p {
+    color: var(--white-color);
+    font: 500 normal 50px 'Raleway';
+}
+
+.portfolio-home-banner-img {
+    transform: translatey(0px);
+    animation: logofloat 6s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes logofloat {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }
+
+.portfolio-home-banner-img img {
+    border-radius: 100%;
+}
+
+.etoile-1 {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--second-banner-color);
+    position: absolute;
+    right: 23%;
+    top: 10%;
+    animation: shin 800ms 600ms ease-in-out infinite;
+}
+
+.etoile-2 {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--second-banner-color);
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    animation: stars 1000ms 0ms ease-in-out infinite;
+}
+
+.etoile-3 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--second-banner-color);
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    animation: stars 1500ms 0ms ease-in-out infinite;
+}
+
+.etoile-4 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    animation: stars 1200ms 0ms ease-in-out infinite;
+}
+
+.etoile-5 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    animation: stars 900ms 0ms ease-in-out infinite;
+}
+
+.etoile-6 {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    animation: stars 1200ms 0ms ease-in-out infinite;
+}
+
+.mars {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 40%;
+    top: 10%;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes stars {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}

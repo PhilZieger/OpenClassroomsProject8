@@ -1,0 +1,36 @@
+@import url(Root.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 95%;
+    height: 65px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    border-radius: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    font-weight: bold;
+}

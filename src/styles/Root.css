@@ -1,0 +1,10 @@
+:root {
+    /* Basic Color */
+    --white-color: #FFF;
+    --black-color: #000;
+
+    /* Advanced site color */
+    --main-text-color: rgb(180, 39, 39);
+    --second-banner-color: #fd9e9e;
+    --primary-title-color: #a82929;
+}
