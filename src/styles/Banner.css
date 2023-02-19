@@ -1,149 +1,118 @@
 @import url(Root.css);
 
-.portfolio-home-banner {
-    width: 100%;
-    height: 590px;
-    background-color: var(--main-text-color);
-    display: flex;
-    justify-content: center;
-}
-
-.portfolio-home-banner-content {
+.portfolio-banner {
     width: 80%;
+    /* height: 700px; */
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    margin: 0 auto;
 }
 
-.portfolio-home-banner-text {
+.portfolio-banner-background {
+    background-image: url(../assets/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-banner-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio-banner-box span {
+    
+}
+
+.portfolio-banner-title {
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.portfolio-banner-name {
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5em;
+}
+
+.portfolio-banner-job {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.portfolio-banner-job-work {
+    color: rgb(28 190 89);
+}
+
+.portfolio-banner-job-country {
+    color: rgb(128 103 240);
+}
+
+.portfolio-banner-description {
+    width: 600px;
+    color: var(--second-text-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.portfolio-banner-link-box {
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
+    align-items: center;
+    gap: 50px;
 }
 
-.portfolio-home-banner-text p {
+.portfolio-banner-link-box i {
+    color: var(--black-color);
+}
+
+.portfolio-banner-link-box-button {
+    width: 178px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-text-color);
+    border-radius: 9999px;
+    background-color: var(--main-text-color);
     color: var(--white-color);
-    font: 500 normal 50px 'Raleway';
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    font-weight: bold;
 }
 
-.portfolio-home-banner-img {
-    transform: translatey(0px);
-    animation: logofloat 6s ease-in-out infinite;
-    position: relative;
+.portfolio-banner-link-box-button:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
-@keyframes logofloat {
-    0%{
-      transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-  }
+.portfolio-banner-link-box-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
 
-.portfolio-home-banner-img img {
+.portfolio-banner-image img {
     border-radius: 100%;
-}
-
-.etoile-1 {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: var(--second-banner-color);
-    position: absolute;
-    right: 23%;
-    top: 10%;
-    animation: shin 800ms 600ms ease-in-out infinite;
-}
-
-.etoile-2 {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--second-banner-color);
-    position: absolute;
-    left: 10%;
-    top: 15%;
-    animation: stars 1000ms 0ms ease-in-out infinite;
-}
-
-.etoile-3 {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--second-banner-color);
-    position: absolute;
-    left: 50%;
-    top: 62%;
-    animation: stars 1500ms 0ms ease-in-out infinite;
-}
-
-.etoile-4 {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    position: absolute;
-    left: 40%;
-    top: 20%;
-    animation: stars 1200ms 0ms ease-in-out infinite;
-}
-
-.etoile-5 {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    position: absolute;
-    left: 10%;
-    top: 65%;
-    animation: stars 900ms 0ms ease-in-out infinite;
-}
-
-.etoile-6 {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    position: absolute;
-    right: 6%;
-    top: 50%;
-    animation: stars 1200ms 0ms ease-in-out infinite;
-}
-
-.mars {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    right: 40%;
-    top: 10%;
-    animation: rotate 10s linear infinite;
-}
-
-@keyframes stars {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.4;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(359deg);
-      }
 }

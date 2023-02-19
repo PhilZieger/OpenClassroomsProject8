@@ -4,7 +4,9 @@
     --black-color: #000;
 
     /* Advanced site color */
-    --main-text-color: rgb(180, 39, 39);
-    --second-banner-color: #fd9e9e;
-    --primary-title-color: #a82929;
+    --main-text-color: rgb(247 80 35);
+    --second-text-color: rgb(111 107 128);
+
+    /* background */
+    --background-simple: rgb(242 245 251);
 }

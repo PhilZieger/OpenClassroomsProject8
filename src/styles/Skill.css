@@ -1,0 +1,94 @@
+@import url(Root.css);
+
+.portfolio-skill-base {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.portfolio-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.portfolio-skill h2 {
+    color: var(--main-text-color);
+    font-size: 32px;
+}
+
+.portfolio-skill-description {
+    color: var(--second-text-color);
+    font-size: 20px;
+    width: 70%;
+}
+
+.progressbar-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.progressbar-box-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progressbar-box-title-text {
+    font-weight: bold;
+}
+
+.progressbar-box-title-progression {
+    font-weight: bold;
+    color: var(--main-text-color);
+    font-size: 20px;
+}
+
+.progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.progressbar {
+    color: white;
+    height: 8px;
+    border-radius: 15px;
+}
+
+.progressbar[title="html"] {
+    background-color: var(--main-text-color);
+    width: 80%;
+}
+
+.progressbar[title="javascript"] {
+    background-color: rgb(28 190 89);
+    width: 70%;
+}
+
+.progressbar[title="react"] {
+    background-color: rgb(128 103 240);
+    width: 70%;
+}
+
+.progressbar[title="node"] {
+    background-color: rgb(240, 51, 51);
+    width: 50%;
+}
+
+.progressbar[title="sql"] {
+    background-color: rgb(54, 51, 240);
+    width: 90%;
+}

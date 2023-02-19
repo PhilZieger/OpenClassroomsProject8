@@ -1,0 +1,36 @@
+@import url(Root.css);
+
+footer {
+    width: 100%;
+    height: 144px;
+    background-color: var(--background-simple);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-footer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.portfolio-footer div {
+    color: rgb(111 107 128);
+}
+
+.portfolio-footer-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.portfolio-footer-nav-mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
