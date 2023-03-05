@@ -3,7 +3,7 @@ import '../../styles/Footer.css';
 function Footer() {
   return (
     <footer>
-       <div className='portfolio-footer'>
+       <div className='portfolio-footer' id='footer'>
             <div>Developed by <b>Phil Zieger</b> © 2023</div>
             <div>
                 <div className='portfolio-footer-nav'>

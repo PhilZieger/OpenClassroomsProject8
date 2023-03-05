@@ -2,7 +2,7 @@ import '../../styles/Home.css';
 import Banner from '../../components/Banner';
 import Portfolio from '../../components/Portfolio';
 import Skill from '../../components/Skill';
-import Footer from '../../components/Footer';
+import Formation from '../../components/Formation';
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
         <Banner/>
         <Portfolio/>
         <Skill />
-        <Footer />
+        <Formation />
     </div>
   );
 }

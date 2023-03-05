@@ -3,7 +3,7 @@ import computer from '../../assets/images/computer.png';
 
 function Skill() {
   return (
-    <div className='portfolio-skill-base'>
+    <div className='portfolio-skill-base' id='skills'>
         <div className='portfolio-skill'>
             <h2>I Develop Skills Regularly to Keep Me Update</h2>
             <span className='portfolio-skill-description'>Most common methods for designing websites that work well on desktop is responsive and adaptive design</span>

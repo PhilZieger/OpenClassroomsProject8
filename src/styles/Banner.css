@@ -1,7 +1,7 @@
 @import url(Root.css);
 
 .portfolio-banner {
-    width: 80%;
+    width: 70%;
     /* height: 700px; */
     height: 100vh;
     display: flex;
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .portfolio-banner-box span {
@@ -32,7 +32,7 @@
 .portfolio-banner-title {
     color: var(--main-text-color);
     font-weight: bold;
-    font-family: 'Raleway';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
     font-size: 2.5em;
@@ -40,14 +40,14 @@
 
 .portfolio-banner-name {
     font-weight: bold;
-    font-family: 'Raleway';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
     font-size: 4.5em;
 }
 
 .portfolio-banner-job {
-    font-family: 'Raleway';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
     font-size: 1.5em;
@@ -64,7 +64,7 @@
 .portfolio-banner-description {
     width: 600px;
     color: var(--second-text-color);
-    font-family: 'Raleway';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 300;
     font-size: 1.3em;
@@ -93,11 +93,10 @@
     background-color: var(--main-text-color);
     color: var(--white-color);
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 300;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .portfolio-banner-link-box-button:hover {
@@ -113,6 +112,40 @@
     gap: 15px;
 }
 
-.portfolio-banner-image img {
+/* .portfolio-banner-image {
+    position: absolute;
+    right: 15%;
+} */
+
+.portfolio-banner-image-react {
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.portfolio-banner-image-javascript {
+    position: absolute;
+    right: 36%;
+    top: 42%;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.portfolio-banner-image img[alt="Profil"] {
     border-radius: 100%;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }

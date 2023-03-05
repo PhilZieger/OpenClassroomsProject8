@@ -15,7 +15,7 @@ function scrollFunction() {
 
 function Header() {
 
-  const downloadTxtFile = () => {
+  const downloadCVFile = () => {
     fetch('cv-phil-zieger.pdf').then(response => {
       response.blob().then(blob => {
           // Creating new object of PDF file
@@ -37,12 +37,11 @@ function Header() {
             <span className='portfolio-header-job'>Web developer</span>
         </div>
         <nav>
-            <Link to="#about">Home</Link>
-            <Link to="/">About</Link>
+            <Link className='active' to="#about">Home</Link>
             <a href='#portfolio' title='Portfolio'>Portfolio</a>
-            <Link to="/">Service</Link>
-            <Link to="/">Contact</Link>
-            <button onClick={downloadTxtFile} className='portfolio-header-download'>Download CV</button>
+            <a href='#skills' title='Skills'>Skills</a>
+            <a href='#training' title='Training'>Training</a>
+            <button onClick={downloadCVFile} className='portfolio-header-download'>Download CV</button>
         </nav>
       </div>
     </header>
